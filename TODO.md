@@ -1,3 +1,3 @@
-# Node Typescript Template - TODO List
+# Node Rate Limiter - TODO List
 
-Replace this content for your project
+- Implement the cluster modes (requires more research and understanding of how these work in the base package)

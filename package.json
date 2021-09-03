@@ -1,18 +1,18 @@
 {
-    "name": "@msamblanet/node-ts-template",
+    "name": "@msamblanet/node-rate-limiter",
     "version": "1.0.0",
-    "private": true,
-    "description": "Template node.js project for typescript projects",
+    "private": false,
+    "description": "Rate limiter based on rate-limiter-flexible",
     "author": "Michael Samblanet <michael@samblanet.com>",
     "license": "Apache-2.0",
     "repository": {
         "type": "git",
-        "url": "https://github.com/msamblanet/node-ts-template.git"
+        "url": "https://github.com/msamblanet/node-rate-limiter.git"
     },
     "bugs": {
-        "url": "https://github.com/msamblanet/node-ts-template/issues"
+        "url": "https://github.com/msamblanet/node-rate-limiter/issues"
     },
-    "homepage": "https://github.com/msamblanet/node-ts-template",
+    "homepage": "https://github.com/msamblanet/node-rate-limiter",
     "main": "dist/cjs/index.js",
     "module": "dist/mjs/index.js",
     "types": "dist/mjs/index.d.ts",
@@ -22,6 +22,7 @@
         "nodemon": "nodemon src/main.ts",
         "nodemon:debug": "nodemon --inspect src/main.ts",
         "test": "jest",
+        "test:open": "opener \"./coverage/lcov-report/index.html\"",
         "test:debug": "node --inspect node_modules/jest/bin/jest.js",
         "test:watch": "jest --watch",
         "test:watch:debug": "node --inspect node_modules/jest/bin/jest.js --watch",
@@ -53,6 +54,7 @@
         "jest": "^27.1.0",
         "nodemon": "^2.0.12",
         "npm-check-updates": "^11.8.3",
+        "opener": "^1.5.2",
         "source-map-support": "^0.5.19",
         "ts-jest": "^27.0.5",
         "ts-node": "^10.2.1",
@@ -72,5 +74,8 @@
         "execMap": {
             "ts": "node -r ts-node/register"
         }
+    },
+    "dependencies": {
+        "rate-limiter-flexible": "^2.2.4"
     }
 }
