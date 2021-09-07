@@ -4,6 +4,7 @@
 // The rate-limiter interfaces are re-exported for convience
 //
 import * as RateLimiter from "rate-limiter-flexible";
+import { Config } from "@msamblanet/node-config-types";
 
 // Convience exports
 export type { RateLimiterQueue, RateLimiterAbstract, BurstyRateLimiter } from "rate-limiter-flexible";
@@ -27,7 +28,7 @@ export type RateLimiterOptions =
     RateLimiter.IRateLimiterMongoOptions;
 
 // A config interface for a basic limiter
-export interface RateLimiterConfig {
+export interface RateLimiterConfig extends Config {
     type: RateLimiterType,
     opts: RateLimiterOptions,
 }
