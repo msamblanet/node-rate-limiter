@@ -1,6 +1,6 @@
 {
     "name": "@msamblanet/node-rate-limiter",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "private": false,
     "description": "Rate limiter based on rate-limiter-flexible",
     "homepage": "https://github.com/msamblanet/node-rate-limiter",
@@ -57,19 +57,17 @@
         ]
     },
     "dependencies": {
-        "@msamblanet/node-config-types": "^0.1.2",
+        "@msamblanet/node-config-types": "^0.2.1",
         "rate-limiter-flexible": "^2.2.4"
     },
     "devDependencies": {
-        "@msamblanet/node-project-settings": "^0.2.26",
+        "@msamblanet/node-project-settings": "^0.3.3",
         "@types/jest": "^27.0.1",
-        "@types/mocha": "^9.0.0",
-        "@types/node": "^16.7.13",
+        "@types/node": "^16.9.0",
         "@typescript-eslint/eslint-plugin": "^4.31.0",
         "del-cli": "^4.0.1",
-        "dotenv": "^10.0.0",
         "eslint": "^7.32.0",
-        "jest": "^27.1.0",
+        "jest": "^27.1.1",
         "nodemon": "^2.0.12",
         "npm-check-updates": "^11.8.5",
         "opener": "^1.5.2",
